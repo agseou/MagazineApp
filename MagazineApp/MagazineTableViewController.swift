@@ -66,6 +66,8 @@ class MagazineTableViewController: UITableViewController {
 //        cell.shadowView.backgroundColor = .clear
 //        cell.shadowView.clipsToBounds = false
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     

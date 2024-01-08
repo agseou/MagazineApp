@@ -7,11 +7,11 @@
 import Foundation
 
 struct Magazine {
-    let title: String,
-    subtitle: String,
-    photo_image: String,
-    date: String,
-    link: String
+    let title: String
+    let subtitle: String
+    let photo_image: String
+    let date: String
+    let link: String
     
 }
 
