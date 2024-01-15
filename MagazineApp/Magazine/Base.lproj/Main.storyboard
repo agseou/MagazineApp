@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cfi-xg-Ohz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qca-kg-eOU">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Magazine Table View Controller-->
+        <!--SeSAC TRAVEL-->
         <scene sceneID="lBP-RB-MyL">
             <objects>
                 <tableViewController id="cfi-xg-Ohz" customClass="MagazineTableViewController" customModule="MagazineApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,35 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="36m-u1-6h8">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bke-bv-fTN">
-                                    <rect key="frame" x="0.0" y="56" width="393" height="1"/>
-                                    <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="1" id="KKF-Uw-aKZ"/>
-                                    </constraints>
-                                </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SeSAC TRAVEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QO-RL-0P4">
-                                    <rect key="frame" x="137" y="18" width="118" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="Bke-bv-fTN" secondAttribute="trailing" id="BVa-j3-bXo"/>
-                                <constraint firstItem="Bke-bv-fTN" firstAttribute="leading" secondItem="36m-u1-6h8" secondAttribute="leading" id="DyF-zH-Roi"/>
-                                <constraint firstAttribute="bottom" secondItem="Bke-bv-fTN" secondAttribute="bottom" id="atn-0a-gAw"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MagazineTableViewCell" rowHeight="460" id="iTn-P6-yE6" customClass="MagazineTableViewCell" customModule="MagazineApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="107" width="393" height="460"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="460"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iTn-P6-yE6" id="hiq-00-SPt">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="460"/>
@@ -115,16 +90,66 @@
                             <outlet property="delegate" destination="cfi-xg-Ohz" id="08o-lG-KiE"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="SeSAC TRAVEL" id="eJM-pA-bev"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1E-6y-0Ps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448.0916030534352" y="6.3380281690140849"/>
+        </scene>
+        <!--Magazine Detail View Controller-->
+        <scene sceneID="xr5-fP-xOK">
+            <objects>
+                <viewController storyboardIdentifier="MagazineDetailViewController" id="qkH-qH-bwG" customClass="MagazineDetailViewController" customModule="MagazineApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="05t-fX-XBy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9KC-LR-evh">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FPC-TT-uDk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FPC-TT-uDk" firstAttribute="bottom" secondItem="9KC-LR-evh" secondAttribute="bottom" id="0QL-M2-Glj"/>
+                            <constraint firstItem="9KC-LR-evh" firstAttribute="top" secondItem="FPC-TT-uDk" secondAttribute="top" id="0XM-WK-hed"/>
+                            <constraint firstItem="FPC-TT-uDk" firstAttribute="trailing" secondItem="9KC-LR-evh" secondAttribute="trailing" id="Cby-RG-GY9"/>
+                            <constraint firstItem="9KC-LR-evh" firstAttribute="leading" secondItem="FPC-TT-uDk" secondAttribute="leading" id="YoX-TO-SXN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="9KC-LR-evh" id="YUO-GT-2Mo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nei-iy-dso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159.5419847328244" y="5.6338028169014089"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="azM-XM-QCV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qca-kg-eOU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oxA-lF-4Rw">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cfi-xg-Ohz" kind="relationship" relationship="rootViewController" id="4GB-qL-QS5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SU3-O3-r3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="521.37404580152668" y="6.3380281690140849"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="scrollViewTexturedBackgroundColor">
-            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
